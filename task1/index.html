@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab9-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="cart">
+            <h1>SHOPPING CART</h1>
+            <hr>
+            <div class="titles">
+                <div class="title_product">Product</div>
+                <div class="title_quantity">Quantity</div>
+                <div class="title_price">Price</div>
+            </div>
+            <div class="products">
+                <div class="product" id="product1">
+                    <div class="product_name">Product1</div>
+                    <div class="product_quantity">
+                        <button id="product1_q_min">-</button>
+                        <p id="product1_q">1</p>
+                        <button id="product1_q_add">+</button>
+                    </div>
+                    <div class="product_price">1000</div>
+                    <button id="product1_remove">x</button>
+                </div>
+                <div class="product" id="product2">
+                    <div class="product_name">Product2</div>
+                    <div class="product_quantity">
+                        <button id="product2_q_min">-</button>
+                        <p id="product2_q">1</p>
+                        <button id="product2_q_add">+</button>
+                    </div>
+                    <div class="product_price">450</div>
+                    <button id="product2_remove">x</button>
+                </div>
+                <div class="product" id="product3">
+                    <div class="product_name">Product3</div>
+                    <div class="product_quantity">
+                        <button id="product3_q_min">-</button>
+                        <p id="product3_q">1</p>
+                        <button id="product3_q_add">+</button>
+                    </div>
+                    <div class="product_price">1235</div>
+                    <button id="product3_remove">x</button>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <h2>ORDER SUMMARY</h2>
+            <hr>
+            <div class="checkout_pice">
+                <p>Subtotal</p>
+                <p id="subtotal">3000</p>
+            </div>
+            <div class="checkout_pice">
+                <p>Shipping</p>
+                <p>100</p>
+            </div>
+            <hr>
+            <div class="checkout_pice">
+                <p>Total</p>
+                <p id="total">3100</p>
+            </div>
+
+            <input type="checkbox" id="agree">
+            <label for="agree">I agree to the Terms and Conditions</label>
+
+            <div class="checkout_button">
+                <p>CHECKOUT</p>
+            </div>
+            <div class="checkout_button">
+                <p>PAYPAL</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
